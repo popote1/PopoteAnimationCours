@@ -1,0 +1,54 @@
+{
+    "name": "TestCubeActionMap",
+    "maps": [
+        {
+            "name": "TestCube",
+            "id": "263caad4-7c39-4c5a-b37f-b26624c2bcc9",
+            "actions": [
+                {
+                    "name": "ButtonA",
+                    "type": "Value",
+                    "id": "db224a9b-02d8-4a84-aff4-00747ba26e5f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ButtonE",
+                    "type": "Value",
+                    "id": "b00870f4-5b2a-4fa7-aaf4-9ee87e130eb2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "eaf15396-0864-44a6-9c69-b1b536351bf7",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ButtonA",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f8a880e5-f841-44c4-a366-fd9a006ea65c",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ButtonE",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
