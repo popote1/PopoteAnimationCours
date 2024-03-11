@@ -24,6 +24,7 @@ public class ThirdPersonControllerBase : MonoBehaviour
     public float JumpHeight = 1f;
     
     
+    
     // Est vrai si le player touche le sol
     protected bool _isGRounded;
     
@@ -38,10 +39,12 @@ public class ThirdPersonControllerBase : MonoBehaviour
     }
     
     protected virtual void DoJump(bool isPress) {
+        Debug.Log("DoJump");
         if ( _isGRounded) _velocity.y = Mathf.Sqrt(JumpHeight * -2f * Gravity);
     }
 
     protected virtual void DoActionOnNorth(bool isPress) {
+       
     }
 
     protected virtual void DoActionOnWest(bool isPress) {
@@ -70,7 +73,7 @@ public class ThirdPersonControllerBase : MonoBehaviour
     }
 
     public void OnNorth(InputValue value) {
-       DoActionOnNorth(value.isPressed);
+        DoActionOnNorth(value.isPressed);
         OnNorthButton?.Invoke(this, value.isPressed);
     }
 
